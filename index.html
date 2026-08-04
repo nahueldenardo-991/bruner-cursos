@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Catálogo de cursos de oficios y formación profesional de Instituto Bruner.">
+  <title>Instituto Bruner | Oficios para tu futuro</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="hero" id="inicio">
+    <nav class="nav shell" aria-label="Navegación principal">
+      <a class="brand" href="#inicio"><img src="assets/bruner-instituto-logo.png" alt="Instituto Bruner"></a>
+      <div class="nav-links">
+        <a href="#cursos">Cursos</a><a href="#metodologia">Por qué Bruner</a>
+        <a class="nav-cta" href="https://brunerinstituto.com/" target="_blank" rel="noreferrer">Consultar</a>
+      </div>
+    </nav>
+    <div class="hero-grid shell">
+      <div class="hero-copy">
+        <p class="eyebrow">Formación profesional · Córdoba</p>
+        <h1>Aprendé haciendo.<br><em>Viví de tu oficio.</em></h1>
+        <p class="hero-text">Cursos presenciales, prácticos y de corta duración para transformar tu interés en una habilidad profesional.</p>
+        <div class="hero-actions"><a class="button primary" href="#cursos">Explorar cursos</a><a class="button secondary" href="https://brunerinstituto.com/" target="_blank" rel="noreferrer">Quiero inscribirme</a></div>
+        <div class="trust"><span><b>100%</b> presencial</span><span><b>Práctica</b> desde el primer día</span><span><b>Certificado</b> impreso</span></div>
+      </div>
+      <div class="hero-art" aria-hidden="true"><div class="orbit one">⚙️</div><div class="orbit two">🔧</div><div class="hero-badge"><span>Descubrí</span><strong>tu próximo<br>oficio</strong><small>Córdoba · Villa Carlos Paz</small></div><div class="spark s1"></div><div class="spark s2"></div></div>
+    </div>
+    <div class="hero-cut"></div>
+  </header>
+
+  <main>
+    <section class="intro shell" id="cursos">
+      <p class="eyebrow">Nuestros cursos</p><h2>Elegí qué querés aprender</h2>
+      <p>Capacitaciones diseñadas para ganar experiencia real, confianza y herramientas concretas para trabajar.</p>
+      <div class="filters" aria-label="Filtrar cursos"><button class="filter active" data-filter="todos">Todos</button><button class="filter" data-filter="construccion">Construcción</button><button class="filter" data-filter="industria">Industria</button><button class="filter" data-filter="automotor">Automotor</button><button class="filter" data-filter="creativos">Creativos</button></div>
+    </section>
+    <section class="catalog shell" id="catalogo" aria-live="polite"></section>
+
+    <section class="method" id="metodologia"><div class="shell method-grid">
+      <div><p class="eyebrow">Aprendizaje por descubrimiento</p><h2>La experiencia es parte de la clase</h2><p>No venís solamente a escuchar. Trabajás con herramientas, sistemas y desafíos reales, acompañado por profesionales del oficio.</p><a class="text-link" href="https://brunerinstituto.com/" target="_blank" rel="noreferrer">Conocé el instituto ↗</a></div>
+      <ol class="steps"><li><span>01</span><div><h3>Práctica y experimentación</h3><p>Manos a la obra en cada encuentro para ganar confianza clase a clase.</p></div></li><li><span>02</span><div><h3>Profesores expertos</h3><p>Capacitadores con experiencia de campo y pasión por enseñar.</p></div></li><li><span>03</span><div><h3>Habilidades para trabajar</h3><p>Métodos y técnicas aplicables a situaciones profesionales reales.</p></div></li><li><span>04</span><div><h3>Certificación</h3><p>Certificado impreso al completar la capacitación.</p></div></li></ol>
+    </div></section>
+
+    <section class="contact shell"><div><p class="eyebrow">¿Listo para empezar?</p><h2>Tu futuro puede comenzar con un oficio.</h2><p>Consultá por próximos inicios, sedes, horarios y formas de pago.</p></div><a class="button light" href="https://brunerinstituto.com/" target="_blank" rel="noreferrer">Consultar vacantes</a></section>
+  </main>
+  <footer><div class="shell footer-grid"><img src="assets/bruner-instituto-logo.png" alt="Instituto Bruner"><div><strong>Sedes</strong><span>Córdoba Capital</span><span>Villa Carlos Paz</span></div><div><strong>Información</strong><a href="https://brunerinstituto.com/" target="_blank" rel="noreferrer">brunerinstituto.com</a><span>Oficios para tu futuro</span></div></div></footer>
+
+  <dialog class="modal" id="detail-modal"><button class="modal-close" aria-label="Cerrar">×</button><div id="modal-content"></div></dialog>
+  <script src="catalogo.js"></script>
+</body>
+</html>
