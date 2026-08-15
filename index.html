@@ -49,11 +49,29 @@
       <ol class="steps"><li><span>01</span><div><h3>Práctica y experimentación</h3><p>Manos a la obra en cada encuentro para ganar confianza clase a clase.</p></div></li><li><span>02</span><div><h3>Profesores expertos</h3><p>Capacitadores con experiencia de campo y pasión por enseñar.</p></div></li><li><span>03</span><div><h3>Habilidades para trabajar</h3><p>Métodos y técnicas aplicables a situaciones profesionales reales.</p></div></li><li><span>04</span><div><h3>Certificación</h3><p>Certificado impreso al completar la capacitación.</p></div></li></ol>
     </div></section>
 
-    <section class="contact shell"><div><p class="eyebrow">¿Listo para empezar?</p><h2>Tu futuro puede comenzar con un oficio.</h2><p>Consultá por próximos inicios, sedes, horarios y formas de pago.</p></div><a class="button light" href="https://brunerinstituto.com/" target="_blank" rel="noreferrer">Consultar vacantes</a></section>
+    <section class="contact shell"><div><p class="eyebrow">¿Listo para empezar?</p><h2>Tu futuro puede comenzar con un oficio.</h2><p>Consultá por próximos inicios, sedes, horarios y formas de pago.</p></div><button class="button light contact-open" type="button">Consultar vacantes</button></section>
   </main>
   <footer><div class="shell footer-grid"><img src="assets/bruner-instituto-logo.png" alt="Instituto Bruner"><div><strong>Sedes</strong><span>Córdoba Capital</span><span>Villa Carlos Paz</span></div><div><strong>Información</strong><a href="https://brunerinstituto.com/" target="_blank" rel="noreferrer">brunerinstituto.com</a><span>Oficios para tu futuro</span></div></div></footer>
 
   <dialog class="modal" id="detail-modal"><button class="modal-close" aria-label="Cerrar">×</button><div id="modal-content"></div></dialog>
-  <script src="catalogo.js?v=20260815-2"></script>
+  <dialog class="lead-modal" id="lead-modal">
+    <button class="lead-close" type="button" aria-label="Cerrar">×</button>
+    <div class="lead-layout">
+      <aside class="lead-aside"><span class="lead-badge">Instituto Bruner</span><h2>Empezá a construir tu futuro.</h2><p>Dejanos tus datos y una asesora se comunicará para contarte fechas, horarios, sedes y formas de pago.</p><div class="lead-trust"><span>✓ Atención personalizada</span><span>✓ Cursos presenciales</span><span>✓ Formación práctica</span></div></aside>
+      <form class="lead-form" id="lead-form">
+        <div class="lead-heading"><p class="eyebrow">Quiero más información</p><h2>Contanos qué curso te interesa</h2><p>Completá estos datos. Te llevará menos de un minuto.</p></div>
+        <label>Nombre y apellido<input id="lead-name" name="nombre" autocomplete="name" required placeholder="Ej.: María González"></label>
+        <label>Teléfono<input id="lead-phone" name="telefono" type="tel" inputmode="tel" autocomplete="tel" required placeholder="Ej.: 351 555-1234"><small>Ingresá tu número con código de área.</small></label>
+        <label>Curso<select id="lead-course" name="curso" required></select></label>
+        <label>Sede<select id="lead-site" name="sede" required><option value="">Elegí una sede</option></select></label>
+        <label>¿Cómo nos conociste?<select id="lead-source" name="origen" required><option value="">Elegí una opción</option><option>Instagram</option><option>Facebook</option><option>Google</option><option>Recomendación</option><option>Vía pública</option><option>WhatsApp</option><option>Otro</option></select></label>
+        <input class="lead-honeypot" name="website" tabindex="-1" autocomplete="off" aria-hidden="true">
+        <button class="button lead-submit" type="submit">Solicitar información <span>→</span></button>
+        <p class="lead-feedback" id="lead-feedback" role="status" aria-live="polite"></p>
+        <p class="lead-privacy">Usaremos tus datos únicamente para responder esta consulta.</p>
+      </form>
+    </div>
+  </dialog>
+  <script src="catalogo.js?v=20260815-3"></script>
 </body>
 </html>
